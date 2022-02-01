@@ -1,1 +1,13 @@
-<p>recipes-item works!</p>
+<ol class="list-group list-group-numbered" style="cursor: pointer;" (click)="onSelected()">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">{{recipe.name}}</div>
+            {{recipe.description}}
+
+        </div>
+        <img src="{{recipe.imagePath}}" style="max-height: 50px;" alt="{{recipe.name}}">
+    </li>
+
+
+</ol>
